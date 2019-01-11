@@ -12,7 +12,7 @@ Voici la liste des fichiers :
 - Le fichier "correspondance-code-insee-code-postal.csv" téléchargé à partir du site https://public.opendatasoft.com/explore/dataset/correspondance-code-insee-code-postal. 
 - Une image "structure.png" : cette image est appelée dans le RMarkdown afin d'illustrer la structure de nos bases de données.
 - **Un fichier chemin_a_renseigner.txt : c'est dans ce fichier que vous indiquerez le chemin du dossier dans lequel se trouve les données. Il doit absolument être completé avant de lancer l'exécution du code. (un exemple y est déjà)**
-- Un fichier "Projet.html" : ce fichier est la sortie du R-Markdown. Ce fichier est considéré comme le **rapport final** de notre projet. Le rapport a aussi été téléchargé sur RPubs. Il peut être consulté en cliquant sur ce lien : http://rpubs.com/databisons/455432
+- Un fichier "Projet.html" : ce fichier est la sortie du R-Markdown. Ce fichier est considéré comme le **rapport final** de notre projet. Le rapport a aussi été téléchargé sur RPubs. Il peut être consulté en cliquant sur ce lien : http://rpubs.com/databisons/457573
 
 **Comment executer notre code ?**
 - Préliminaire : Décompresser le fichier "correspondance-code-insee-code-postal.csv" puis le placer dans le repertoire de vos données (renseignés dans chemin_a_renseigner.txt)
