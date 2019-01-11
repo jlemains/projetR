@@ -187,17 +187,14 @@ Chargement du fichier paramètres qui permet :
 
 # 1 - Etude globale
 
-Nous importons dans le fichier "Parametres.R" les différents paramètres (bases de données, variables, etc.).
-C'est aussi dans ce fichier que les tables sont chargées en mémoire.
-
-```{r Chargement_des_parametres}
-source("Parametres.R")
-```
 Les fonctions permettant de répondre aux problématiques sont chargées dans le fichier "Projet.R"" :
 
 ```{r Chargement_des_fonctions_projet}
 source("Projet.R")
 ```
+Nous importons le fichier "Parametres.R" dans le fichier "Projet.R", ce fichiers déclare les différents paramètres (bases de données, variables, etc.).
+C'est aussi dans ce fichier que les tables sont chargées en mémoire.
+
 
 ## 1.1	Répartition Adhérant / VIP ....
 
