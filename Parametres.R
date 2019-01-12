@@ -26,7 +26,7 @@ chemin_dossier_donnees_Thomas <- "C:/Users/timti/Documents/R/Rproject/DATA/"
 chemin_dossier_donnees_Dan <- "C:/Users/dgoldman/Desktop/MBA - BIG DATA CDO/DataMining/projet transverse R/Projet R a rendre/DATA/"
 chemin_dossier_donnees_Juliette <- "C:/Users/Juliette/Rproject/DATA_UTF-8/"
 chemin_dossier_donnees_Nicolas <- "/Users/nrobin/Documents/GitHub/Rproject/DATA_UTF-8/"
-chemin_dossier_donnees_Jeremy <- paste(read.table("chemin_a_renseigner.txt", stringsAsFactors = F)[1,],"\\",sep="")
+chemin_dossier_donnees_Jeremy <- paste(read.table("chemin_a_renseigner.txt", stringsAsFactors = F)[1,],"/",sep="")
 
 # SELECTION DU CHEMIN DE DOSSIER DES FICHIERS DE DONNEES PAR DEFAUT.
 # Pour sélectionner le dossier des fichiers de donnée avec la boite de dialogue :

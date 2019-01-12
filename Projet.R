@@ -659,29 +659,44 @@ top_par_univers_3.2<- function(table_article,table_ligne_ticket){
 # ---------------------------------------------------------------------------------------
 
 # 1.1	Répartition Adhérant / VIP.
-#repartition_adherant_vip_1.1(ANNEE_EN_COURS,convert_date_client(clients))
+if (execution_avec_RMarkdown == FALSE) {
+  repartition_adherant_vip_1.1(ANNEE_EN_COURS,convert_date_client(clients))
+}
 
 # 1.2	Comportement du CA GLOBAL par client N-2 vs N-1.
-#comportement_CA_1.2(ANNEE_EN_COURS,entetes)
+if (execution_avec_RMarkdown == FALSE) {
+  comportement_CA_1.2(ANNEE_EN_COURS,entetes)
+}
 
 # 1.3	Répartition par age x sexe.
-#proportion_sexe_age_1.3(clients)
+if (execution_avec_RMarkdown == FALSE) {
+  proportion_sexe_age_1.3(clients)
+}
 
 # ---------------------------------------------------------------------------------------
 # 2 -	ETUDE PAR MAGASIN
 # ---------------------------------------------------------------------------------------
 
 # 2.1	Résultat par magasin (+1 ligne Total).
-#resultat_magasin_2.1(ANNEE_EN_COURS,clients, magasins, entetes)
+if (execution_avec_RMarkdown == FALSE) {
+  resultat_magasin_2.1(ANNEE_EN_COURS,clients, magasins, entetes)
+}
+
 # 2.2	Distance CLIENT <-> MAGASIN.
-#distance_Client_Magasin_2.2(insee, magasins, clients)
+if (execution_avec_RMarkdown == FALSE) {
+  distance_Client_Magasin_2.2(insee, magasins, clients)
+}
 
 # ---------------------------------------------------------------------------------------
 # 3 -	ETUDE PAR UNIVERS
 # ---------------------------------------------------------------------------------------
 
 # 3.1 - Affichage d'un histogramme N-2 / N-1 évolution du CA par univers.
-#etude_par_univers_3.1(articles,lignes,entetes)
+if (execution_avec_RMarkdown == FALSE) {
+  etude_par_univers_3.1(articles,lignes,entetes)
+}
 
 # 3.2 - Affichage du top 5 des familles les plus rentable par univers.
-#top_par_univers_3.2(articles,lignes)
+if (execution_avec_RMarkdown == FALSE) {
+  top_par_univers_3.2(articles,lignes)
+}
