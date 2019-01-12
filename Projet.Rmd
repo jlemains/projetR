@@ -1,7 +1,7 @@
 ---
 title: "Projet R - Cours Outils et Méthodologie"
 author: "Thomas FONTAINE, Dan GOLDMAN, Juliette LEMAINS, Nicolas ROBIN"
-date: "02/01/2019"
+date: "12/01/2019"
 always_allow_html: yes
 output:
   html_document: default
@@ -112,7 +112,7 @@ Une fois les données acquises, il faut :
 * créer une fonction qui détermine la distance entre 2 points.
 
 La fonction doit prendre 4 variables en compte : latitude1, longitude1, latitude2, longitude2.\
-Pour savoir si la fonction est correcte : http://www.lexilogos.com/calcul_distances.htm
+Pour savoir si la fonction est correcte : https://www.lexilogos.com/calcul_distances.htm
 
 Constituer une représentation (tableau ou graphique --> au choix) représentant le nombre de client par distance :
 
@@ -171,7 +171,7 @@ Nous avons ensuite fait le choix de découper le projet en différentes fonction
 * top_par_univers_3.2
 
 
-Dans le même esprit, les fichiers ont été chargées sur [GitHub](https://github.com/jimilibilibob/Rproject) pour favoriser le travail en groupe.
+Dans le même esprit, les fichiers ont été chargées sur [GitHub](https://github.com/jlemains/projetR) pour favoriser le travail en groupe.
 
 Si vous désirez obtenir des informations supplémentaires sur chacune des fonctionnalités développées dans le code, des commentaires détaillés ont été inclus dans le code source des fichiers "Parametres.R" et "Projet.R".
 
@@ -192,7 +192,8 @@ Les fonctions permettant de répondre aux problématiques sont chargées dans le
 ```{r Chargement_des_fonctions_projet}
 source("Projet.R")
 ```
-Nous importons le fichier "Parametres.R" dans le fichier "Projet.R", ce fichiers déclare les différents paramètres (bases de données, variables, etc.).
+Nous importons le fichier "Parametres.R" dans le fichier "Projet.R", ce fichier déclare les différents paramètres (bases de données, variables, etc.).
+
 C'est aussi dans ce fichier que les tables sont chargées en mémoire.
 
 
@@ -265,7 +266,7 @@ Cette jointure finale "jointureGeoMagasinsClients" va permettre d'effectuer le c
 
 Pour le calcul de la distance entre 2 points géographiques, on a créé la fonction **distanceGeo((lat1, lon1, lat2, lon2)**.
 Cette fonction utilise la [FORMULE DE HAVERSINE](https://fr.wikipedia.org/wiki/Formule_de_haversine) en l'état.
-Elle renvoie *exactement* les mêmes valeurs que celles retournées sur le site [LEXILOGOS](http://www.lexilogos.com/calcul_distances.htm).
+Elle renvoie *exactement* les mêmes valeurs que celles retournées sur le site [LEXILOGOS](https://www.lexilogos.com/calcul_distances.htm).
 
 **Étape 7 : Affichage du résultat au format tableau**
 
@@ -274,6 +275,12 @@ Une fois la distance calculée pour chaque client, et après que l'affectation d
 ```{r Exercice_2.2_Distance_Client_Magasin}
 distance_Client_Magasin_2.2(insee, magasins, clients)
 ```
+
+Nous avons remarqué que sur l'ensemble des 845876 individus de la base clients, 9598 d'entre eux (soit un peu plus de 1%) ont renseigné une adresse postale se trouvant à plus de 200 kilomètres de leur lieu d'achat. Il y a de fortes chances pour que le client ait transmis le code postal de sa ville natale ou bien le client était de passage.
+
+Par exemple, le client pour lequel on obtient la distance la plus élevée (9393,7602 km) a transmis le code postal de [Saint-Andrée](https://www.google.com/destination/map/topsights?q=saint-Andr%C3%A9+r%C3%A9union&site=search&output=search&dest_mid=/m/0dhd3c&sa=X&ved=2ahUKEwjguMGi9OffAhUNJBoKHW3IDVoQ69EBKAEwAXoECAAQBA#trifp=skpm%3D/g/1yl45x9bm) sur île de la Réunion. Ça au moins le mérite de nous faire voyager ! 😁
+
+En bref, nous avons décidé pour cette étude, de conserver ces 9508 clients à l'intérieur de la modalité "D5 - plus de 50 km" dans la mesure où il est impossible de savoir si il s'agit réellement de l'adresse réelle du client ou pas… Lors d’une présentation de ce rapport aux responsables de l'enseigne, il sera nécessaire de leur transmettre cette information.
 
 # 3 - Etude par univers
 
