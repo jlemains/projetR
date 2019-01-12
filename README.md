@@ -23,4 +23,4 @@ Pour exécuter notre code, vous pouvez procéder de deux manières différentes.
 - **via "projet.R"** : Ouvrez le fichier "Parametres.R" et assurez-vous que la variable **execution_avec_RMarkdown** est égale à **FALSE** (l.19).  Placez-vous ensuite dans le code du fichier « Projet.R » avant de sélectionner et d'exécuter la totalité du code.
 - **via "Projet.Rmd"** : Vous n'avez qu'à ouvrir le fichier "Parametres.R" et affecter la variable **execution_avec_RMarkdown** à **TRUE** (l.19). Après ça vous pourrez cliquer sur **Knit** dans le markdown et le markdown sera généré automatiquement en html. Pour cette partie **n'oubliez pas de préciser votre répertoire de données dans le fichier texte "chemin_a_renseigner.txt"**.
 
-**Avertissemnt**: Le projet permet un téléchargement automatisé des librairies manquntes. Par conséquent, **il est obligatoire d'être connecté à internet lors de l'exécution des scripts**.
+**Avertissement**: Le projet permet un téléchargement automatisé des librairies manquntes. Par conséquent, **il est obligatoire d'être connecté à internet lors de l'exécution des scripts**.
