@@ -52,7 +52,7 @@ chargementDesLibraries <- function() {
   
   for (package in libraries_utilies) {
     if (!require(package, character.only=T, quietly=T)) {
-      install.packages(package)
+      install.packages(package, repos = "https://cran.rstudio.com")
       library(package, character.only=T)
     }
   } 
