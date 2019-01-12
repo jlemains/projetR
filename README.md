@@ -2,7 +2,7 @@
 
 *Auteurs : Thomas FONTAINE, Dan GOLDMAN, Juliette LEMAINS et Nicolas ROBIN*
 
-Vous trouverez dans ce répertoire plusieurs fichiers permettant de répondre à l'énoncé donné en cours d'Outils et Méthodologie.
+Vous trouverez dans ce repository Git, l'ensemble fichiers permettant de répondre à l'énoncé donné en cours d'Outils et Méthodologie.
 
 Voici la liste des fichiers :
 - Un fichier "Projet.Rproj" à lancer pour se trouver dans le bon répertoire.
@@ -18,7 +18,7 @@ Voici la liste des fichiers :
 - Pour utiliser ce code, vous pouvez soit choisir de le rapatrier manuellement en cliquant sur le bouton "Clone or download" de la page du projet et télécharger l'ensemble des fichiers de ce repository, soit créer un projet GitHub à partir de R-Studio en indiquant le "Repository URL" Git suivant : https://github.com/jlemains/projetR.
 - N'oubliez pas de décompresser le fichier "correspondance-code-insee-code-postal.zip" qui vous permettra de récupérer le fichier csv. Placez-le ensuite dans le repertoire de vos données (renseignés dans le fichier texte "chemin_a_renseigner.txt"")
 
-**Comment executer notre code ?**
+**Comment exécuter notre code ?**
 Pour exécuter notre code, vous pouvez procéder de deux manières différentes. Vous pouvez l'exécuter : 
 - **via "projet.R"** : Ouvrez le fichier "Parametres.R" et assurez-vous que la variable **execution_avec_RMarkdown** est égale à **FALSE** (l.19).  Placez-vous ensuite dans le code du fichier « Projet.R » avant de sélectionner et d'exécuter la totalité du code.
 - **via "Projet.Rmd"** : Vous n'avez qu'à ouvrir le fichier "Parametres.R" et affecter la variable **execution_avec_RMarkdown** à **TRUE** (l.19). Après ça vous pourrez cliquer sur **Knit** dans le markdown et le markdown sera généré automatiquement en html. Pour cette partie **n'oubliez pas de préciser votre répertoire de données dans le fichier texte "chemin_a_renseigner.txt"**.
