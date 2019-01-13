@@ -26,6 +26,6 @@ Pour exécuter notre code, vous pouvez procéder de deux manières différentes.
 **Avertissement** : Le projet permet un téléchargement automatisé des librairies manquntes. Par conséquent, **il est obligatoire d'être connecté à internet lors de l'exécution des scripts**.
 
 **Configuration minimale recommandée** : 
-Mémoire vive : 8 Go de RAM.
-Version de R : 3.5.2.
-Environnement de développement : RStudio version 1.1.463.
+- Mémoire vive : 8 Go de RAM.
+- Version de R : 3.5.2.
+- Environnement de développement : RStudio version 1.1.463.
